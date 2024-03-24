@@ -7,6 +7,7 @@
     <title>Profile</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/tabs.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 
@@ -132,10 +133,103 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card colspan-2">3</div>
+                    <div class="card colspan-2">
+                        <div class="tab-group bottom-card">
+                            <div class="tab-item-list">
+                                <div class="tab-item" data-target="#contact-info">Contact Information</div>
+                                <div class="tab-item" data-target="#general-details">General Details</div>
+                                <div class="tab-item active" data-target="#roles-permissions">Roles & Permissions</div>
+                                <div class="tab-item" data-target="#internal-work-history">Internal Work History</div>
+                                <div class="tab-item" data-target="#qualifications">Qualifications</div>
+                                <div class="tab-item" data-target="#work-history">Work History</div>
+                                <div class="tab-item" data-target="#bank-details">Bank Details</div>
+                                <div class="tab-item" data-target="#benefit-details">Benefit Details</div>
+                                <div class="tab-item" data-target="#monthly-slips">Monthly Slips</div>
+                            </div>
+                            <div class="tab-pane-list">
+                                <div class="tab-pane" id="contact-info">Contact Information</div>
+                                <div class="tab-pane" id="general-details">General Details</div>
+                                <div class="tab-pane active" id="roles-permissions">
+                                    <div class="tab-content-layout">
+                                        <div>
+                                            <h3 class="color-text1 caption-text fw-bol mt-0">Roles</h3>
+                                            <div class="tags">
+                                                <div class="tag">Developer</div>
+                                                <div class="tag">Admin</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3 class="color-text1 caption-text fw-bol mt-0">Permissions</h3>
+                                            <div class="permissions">
+                                                <label class="permission" for="permission-1">
+                                                    <input type="checkbox" id="permission-1">
+                                                    Permission 1
+                                                </label>
+                                                <label class="permission checked" for="permission-2">
+                                                    <input type="checkbox" id="permission-2">
+                                                    Permission 2
+                                                </label>
+                                                <label class="permission checked" for="permission-3">
+                                                    <input type="checkbox" id="permission-3">
+                                                    Permission 3
+                                                </label>
+                                                <label class="permission checked" for="permission-4">
+                                                    <input type="checkbox" id="permission-4">
+                                                    Permission 4
+                                                </label>
+                                                <label class="permission checked" for="permission-5">
+                                                    <input type="checkbox" id="permission-5">
+                                                    Permission 5
+                                                </label>
+                                                <label class="permission checked" for="permission-6">
+                                                    <input type="checkbox" id="permission-6">
+                                                    Permission 6
+                                                </label>
+                                                <label class="permission checked" for="permission-7">
+                                                    <input type="checkbox" id="permission-7">
+                                                    Permission 7
+                                                </label>
+                                                <label class="permission checked" for="permission-8">
+                                                    <input type="checkbox" id="permission-8">
+                                                    Permission 8
+                                                </label>
+                                                <label class="permission checked" for="permission-9">
+                                                    <input type="checkbox" id="permission-9">
+                                                    Permission 9
+                                                </label>
+                                                <label class="permission checked" for="permission-10">
+                                                    <input type="checkbox" id="permission-10">
+                                                    Permission 10
+                                                </label>
+                                                <label class="permission checked" for="permission-11">
+                                                    <input type="checkbox" id="permission-11">
+                                                    Permission 11
+                                                </label>
+                                                <label class="permission checked" for="permission-12">
+                                                    <input type="checkbox" id="permission-12">
+                                                    Permission 12
+                                                </label>
+                                                <label class="permission checked" for="permission-13">
+                                                    <input type="checkbox" id="permission-13">
+                                                    Permission 13
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="internal-work-history">Internal Work History</div>
+                                <div class="tab-pane" id="qualifications">Qualifications</div>
+                                <div class="tab-pane" id="work-history">Work History</div>
+                                <div class="tab-pane" id="bank-details">Bank Details</div>
+                                <div class="tab-pane" id="benefit-details">Benefit Details</div>
+                                <div class="tab-pane" id="monthly-slips">Monthly Slips</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 

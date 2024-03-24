@@ -1,0 +1,40 @@
+.tab-group {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    gap: 2rem;
+}
+
+.tab-group .tab-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tab-group .tab-item-list .tab-item {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    cursor: pointer;
+    color: var(--text2-color);
+    font-size: var(--placeholder-text-size);
+    padding-left: 0.75rem;
+    transition: 0.2s;
+}
+.tab-group .tab-item-list .tab-item.active {
+    color: var(--b2-color);
+    border-left: solid 2px var(--b2-color);
+}
+
+.tab-group .tab-pane-list .tab-pane {
+    display: none;
+}
+
+.tab-group .tab-pane-list .tab-pane.active {
+    display: block;
+    animation: fade 0.75s ;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
