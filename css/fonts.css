@@ -1,4 +1,31 @@
 @font-face {
     font-family: daytonapro;
+    font-weight: normal;
     src: url(../assets/font/Daytona/DaytonaPro-Regular.ttf);
 }
+
+@font-face {
+    font-family: daytonapro;
+    font-weight: 300;
+
+    src: url(../assets/font/Daytona/DaytonaPro-Semibold.ttf);
+}
+
+:root {
+    --title-text-size: 1.25rem;
+    --caption-text-size: 1rem;
+    --placeholder-text-size: 0.875rem;
+    --medium-text-size: 0.75rem;
+    --small-text-size: 0.625rem;
+    --smaller-text-size: 0.5625rem;
+}
+
+.title-text { font-size: var(--title-text-size) !important; }
+.caption-text { font-size: var(--caption-text-size) !important; }
+.placeholder-text { font-size: var(--placeholder-text-size) !important; }
+.medium-text { font-size: var(--medium-text-size) !important; }
+.small-text { font-size: var(--small-text-size) !important; }
+.smaller-text { font-size: var(--smaller-text-size) !important; }
+
+.fw-normal { font-weight: normal !important; }
+.fw-bold { font-weight: bold !important; }

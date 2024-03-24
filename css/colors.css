@@ -9,4 +9,16 @@
     --b2-color: #2998ff;
 
     --box-border-color-1: #E7E7E7;
+    --bg-color: #EFEFEF;
 }
+
+.color-text1 { color: var(--text1-color) !important; }
+.color-text2 { color: var(--text2-color) !important; }
+.color-text3 { color: var(--text3-color) !important; }
+.color-text-common { color: var(--text-common-color) !important; }
+.color-placeholder { color: var(--placeholder-color) !important; }
+.color-b2 { color: var(--b2-color) !important; }
+.color-white { color: var(--white-color) !important; }
+
+.red {background-color: red;}
+.blue {background-color: blue;}

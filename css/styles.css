@@ -8,6 +8,7 @@ html, body {
     font-family: 'daytonapro', sans-serif;
 }
 
+/* content styles */
 .wrapper-body {
     width: 100vw;
     height: 100vh;
@@ -19,16 +20,155 @@ html, body {
 .topbar {
     padding: 0.75rem 0;
     background-color: var(--white-color);
-    border-bottom: 1px solid var(--box-border-color-1);
+    border-bottom: 2px solid var(--box-border-color-1);
 }
 .topbar .user-box img {
     width: 2.5rem;
     height: 2.5rem;
 }
 
-.bg-red {
+.wrapper-body .content-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+}
+
+.wrapper-body .content-wrapper .content {
+    overflow: auto;
+}
+
+.wrapper-body .content-wrapper .content .title-bar {
+    padding: 1.125rem;
+    background-color: var(--white-color);
+    color: var(--color-text1);
+}
+
+.wrapper-body .content .content-section {
+    padding: 1.125rem;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 3fr 2fr;
+}
+
+.wrapper-body .content .content-section .profile-info {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr auto 2fr;
+}
+
+.wrapper-body .content .content-section .profile-info .contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.wrapper-body .content .content-section .profile-info .contact-info .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+}
+
+.wrapper-body .content .content-section .profile-info .contact-info .top .dp {
+    width: 6.25rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 0.3rem;
+}
+
+.wrapper-body .content .content-section .profile-info .contact-info .top .name {
+    font-size: var(--caption-text-sie);
+    color: #1F3B66;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.wrapper-body .content .content-section .profile-info .contact-info .top .ocupation {
+    color: var(--placeholder-color);
+    font-size: var(--placeholder-text-size);
+}
+
+.wrapper-body .content .content-section .profile-info .contact-info .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.wrapper-body .content .content-section .profile-info .contact-info .bottom .item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.wrapper-body .content .content-section .profile-info .contact-info .bottom .item span {
+    vertical-align: middle;
+}
+
+.wrapper-body .content .content-section .profile-info .other-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.wrapper-body .content .content-section .profile-info .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.wrapper-body .content .content-section .profile-info .info .item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.wrapper-body .content .content-section .team-and-leaves {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.wrapper-body .content .content-section .team-and-leaves .team-dps {
+    position: relative;
+    display: flex;
+    margin-right: -2.5rem;
+}
+.wrapper-body .content .content-section .team-and-leaves .team-dps img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    margin-left: -10%;
     background-color: red;
 }
-.bg-blue {
-    background-color: blue;
+.wrapper-body .content .content-section .team-and-leaves .team-dps img:nth-child(1) {
+    z-index: 3;
+    margin-left: 0;
+}
+
+.wrapper-body .content .content-section .team-and-leaves .team-dps img:nth-child(2) {
+    z-index: 2;
+}
+
+.wrapper-body .content .content-section .team-and-leaves .team-dps img:nth-child(3) {
+    z-index: 1;
+}
+
+.wrapper-body .content .content-section .team-and-leaves .team-dps img:nth-child(4) {
+    z-index: 0;
+}
+
+
+
+/* component styles */
+.card {
+    padding: 1.5rem;
+    border-radius: 0.9375rem;
+    border: 1px solid var(--box-border-color-1);
+    background: var(--white-color);
 }
