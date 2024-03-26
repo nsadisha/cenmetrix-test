@@ -1,5 +1,6 @@
 @import url('grid.css');
 @import url('tabs.css');
+@import url('checkbox.css');
 @import url('colors.css');
 @import url('fonts.css');
 
@@ -195,42 +196,6 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-}
-
-.wrapper-body .content .content-section .bottom-card .tab-content-layout .permissions .permission {
-    position: relative;
-    cursor: pointer;
-    padding: 0.3rem;
-    color: var(--text3-color);
-    font-size: var(--placeholder-text-size);
-}
-
-.wrapper-body .content .content-section .bottom-card .tab-content-layout .permissions .permission input {
-    opacity: 0;
-}
-
-.wrapper-body .content .content-section .bottom-card .tab-content-layout .permissions .permission::before {
-    position: absolute;
-    content: '';
-    border-radius: 0.25rem;
-    border: 1px solid #D9D9D9;
-    width: 1rem;
-    height: 1rem;
-    top: 50%;
-    left: 3px;
-    transform: translateY(-50%);
-}
-
-.wrapper-body .content .content-section .bottom-card .tab-content-layout .permissions .permission.checked::after {
-    position: absolute;
-    content: '';
-    border-radius: 0.rem;
-    background-color: #D9D9D9;
-    width: 0.5rem;
-    height: 0.5rem;
-    top: 50%;
-    left: calc(4px + 0.25rem);
-    transform: translateY(-50%);
 }
 
 
