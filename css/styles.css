@@ -1,6 +1,7 @@
 @import url('grid.css');
 @import url('tabs.css');
 @import url('checkbox.css');
+@import url('sidebar.css');
 @import url('colors.css');
 @import url('fonts.css');
 
@@ -8,6 +9,11 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: 'daytonapro', sans-serif;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 /* content styles */
@@ -57,10 +63,16 @@ html, body {
     grid-template-columns: 3fr 2fr;
 }
 
+.bottom-card { grid-column: 1 / span 2; }
+
 .wrapper-body .content .content-section .profile-info {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr auto 2fr;
+}
+
+.wrapper-body .content .content-section .profile-info .hr {
+    display: none;
 }
 
 .wrapper-body .content .content-section .profile-info .contact-info {
@@ -196,6 +208,54 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
+}
+
+
+
+/* responsive css */
+@media only screen and (max-width: 1024px) {
+    .wrapper-body .content-wrapper {
+        grid-template-columns: 2fr 5.5fr;
+    }
+
+    .wrapper-body .content .content-section {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-card { grid-column: 1; }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper-body .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {display: none;}
+}
+
+@media only screen and (max-width: 576px) {
+    .site-logo {
+        width: 10rem;
+    }
+
+    .wrapper-body .content .content-section .profile-info .vr {
+        display: none;
+    }
+
+    .wrapper-body .content .content-section .profile-info .hr {
+        display: block;
+    }
+
+    .wrapper-body .content .content-section .profile-info {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .topbar .user-box .name,
+    .topbar .user-box .arrow {
+        display: none;
+    }
 }
 
 

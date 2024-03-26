@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/tabs.js" defer></script>
     <script src="js/checkbox.js" defer></script>
+    <script src="js/sidebar.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 
@@ -16,8 +17,8 @@
     <div class="wrapper-body">
         <header class="container topbar">
             <div class="row justify-content-between">
-                <div class="">
-                    <img src="assets/svg/logo.svg" alt="logo">
+                <div class="logo-wrapper">
+                    <img src="assets/svg/logo.svg" alt="logo" class="site-logo">
                 </div>
 
                 <div class="d-flex gap-4 align-items-center">
@@ -28,15 +29,63 @@
 
                     <a class="d-flex align-items-center gap-2 user-box no-link" href="#">
                         <img src="assets/img/dp.png" alt="dp">
-                        <span class="color-text1 placeholder-text fw-bold">Sanjaya Perera</span>
-                        <img src="assets/svg/arrow-down.svg" alt="arrow" style="width: 1rem;">
+                        <span class="color-text1 placeholder-text fw-bold name">Sanjaya Perera</span>
+                        <img src="assets/svg/arrow-down.svg" alt="arrow" style="width: 1rem;" class="arrow">
                     </a>
                 </div>
             </div>
         </header>
 
         <div class="content-wrapper">
-            <div class="sidebar red">sidebar</div>
+            <div class="sidebar">
+                <!-- <div class="toggle-btn"><img src="assets/svg/separate-icon.svg" alt="separate icon"></div> -->
+                <div class="sidebar-content">
+                    <div class="sidebar-section">
+                        <span class="caption">Main</span>
+                        <ul class="level-1">
+                            <li>
+                                <a href="#"><img src="assets/svg/home.svg" alt="home"><span>Dashboard</span></a>
+                            </li>
+                            <li class="active has-children expanded">
+                                <a href="#"><img src="assets/svg/stats.svg" alt="home">Client Management</a>
+                                <ul class="level-2">
+                                    <li><a href="#">Add New</a></li>
+                                    <li class="active"><a href="#">Company List</a></li>
+                                    <li><a href="#">View Company</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#"><img src="assets/svg/user.svg" alt="home">User Management</a>
+                                <ul class="level-2">
+                                    <li><a href="#">Add New</a></li>
+                                    <li><a href="#">View All</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/svg/calender.svg" alt="home">Schedules</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-section">
+                        <span class="caption">Settings</span>
+                        <ul>
+                            <li class="has-children">
+                                <a href="#"><img src="assets/svg/gear.svg" alt="home"><span>Settings</span></a>
+                                <ul class="level-2">
+                                    <li><a href="#">Setting 1</a></li>
+                                    <li><a href="#">Setting 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-footer">
+                    <div class="wrapper">
+                        <div class="btn" id="light-theme-btn"><img src="assets/svg/sun.svg" alt="sun">Light</div>
+                        <div class="btn active" id="dark-theme-btn"><img src="assets/svg/moon.svg" alt="moon">Dark</div>
+                    </div>
+                </div>
+            </div>
             <div class="content">
                 <div class="title-bar title-text-size">My Profile</div>
                 <div class="content-section">
@@ -65,6 +114,7 @@
                                 </div>
                             </div>
                             <div class="vr"></div>
+                            <div class="hr"></div>
                             <div class="other-info">
                                 <div class="basic-info">
                                     <h3 class="caption-text color-text1 fw-bold mt-0">Basic Information</h3>
@@ -134,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card colspan-2">
+                    <div class="card bottom-card">
                         <div class="tab-group bottom-card">
                             <div class="tab-item-list">
                                 <div class="tab-item" data-target="#contact-info">Contact Information</div>

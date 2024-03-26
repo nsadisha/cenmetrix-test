@@ -10,6 +10,12 @@
 
     --box-border-color-1: #E7E7E7;
     --bg-color: #EFEFEF;
+
+    --sidebar-bg: #202532;
+    --sidebar-bg-light: #2D2F39;
+    --sidebar-text-color: #8A8C91;
+    --sidebar-active-color-1: #ffffff;
+    --sidebar-active-color-2: #ffffff33;
 }
 
 .color-text1 { color: var(--text1-color) !important; }
